@@ -1,18 +1,23 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* 컨테이너 스타일 */
-        .canvas-container {
-            display: flex;
-            justify-content: center; /* 가로 중앙 정렬 */
-            align-items: center; /* 세로 중앙 정렬 */
-            height: 100vh; /* 전체 화면 높이 */
-        }
-    </style>
-</head>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                .canvas-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+                canvas {
+                    width: 100%; /* 전체 너비 사용 */
+                    max-width: 600px; /* 최대 너비 제한 */
+                    height: auto; /* 높이 자동 조정 */
+                }
+            </style>
+        </head>
 <body>
     <div class="canvas-container">
         <canvas id="canvas" width="600" height="600"></canvas>
